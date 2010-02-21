@@ -1,0 +1,366 @@
+/**
+ * By Thuong Tran Drupal theme
+ * bythuongtran.com
+ * Made by Colada <http://www.colada.be>
+ * Matthias Vandermaesen <matthias@colada.be>
+ */
+
+/*  @group reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body {line-height:1.5;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+/* @end */
+
+/* @group typography */
+body {
+  background: transparent url('../images/bg-body.png');
+  /*font-size: 87%; */ /* 14px */
+  font-size: 62%;
+  color: #868c93; 
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; 
+}
+
+a {
+  color: #72787f;
+  text-decoration: none;
+  border-bottom: 1px solid #72787f;
+}
+/* @end */
+
+/* @group general layout */
+#frontpage {
+  background: transparent url('../images/bg-frontpage.png') no-repeat center top;
+  height: 731;
+  margin: 0 auto;
+}
+
+#page {
+  background: transparent url('../images/bg-page.png') no-repeat center top;
+  height: 731px;
+  margin: 0 auto;  
+}
+
+#container {
+  width: 990px;
+  margin: 0 auto;
+}
+/* @end */
+
+/* @group frontpage */
+#header {
+  height: 133px;
+}
+
+  #header h1 {
+    display: relative;
+    height: 133px;
+    width: 452px;
+    float: left;
+  }
+
+  #header h1 span {
+    position: absolute;
+    height: 133px;
+    width: 452px;
+  }
+  
+  #frontpage #header h1 span {
+    background: url('../images/header.png') no-repeat top left; 
+  }
+
+  #page #header h1 span {
+    background: url('../images/page-header.png') no-repeat top left; 
+  }
+
+#frontpage #media {
+  width: 612px;
+  float: left;
+}
+
+  #frontpage #media .picture {
+    background: transparent url('../images/frontpage-picture.png') no-repeat top left;
+    width: 562px;
+    height: 389px;
+    display: block;
+  }
+  
+    #frontpage #media .picture img {
+      margin: 17px 0 0 17px;
+    }
+  
+  #frontpage #media .gallery {
+    width: 562px;
+    height: 67px;
+    margin: 1px 0 15px 0;
+  }
+  
+  #frontpage #media .gallery .gallery-wrapper {
+    display: table; /* todo: needs IE8 support!! */
+    margin: 0 auto;
+  }
+  
+    #frontpage #media .gallery a {
+      text-decoration: none;
+      border: none;
+    }
+
+    #frontpage #media .gallery ul,    
+    #frontpage #media .gallery a.nav-left,
+    #frontpage #media .gallery a.nav-right  {
+      float: left;
+    }
+    
+    #frontpage #media .gallery ul {
+      margin: 0 10px;
+      padding: 0;
+      list-style: none;
+    }
+    
+    #frontpage #media .gallery ul li {
+      float: left;
+      background: transparent url('../images/gallery-border.png') no-repeat left 15px;
+      margin: 0 5px 0 0;
+      padding: 0;
+      width: 37px;
+      height: 68px;
+    }
+    
+    #frontpage #media .gallery ul li img {
+      margin: 16px 0 0 2px;
+    }
+
+#frontpage #introduction {
+  width: 378px;
+  float: left;
+}
+
+  #frontpage #introduction p.certified {
+    display: relative;
+    width: 378px;
+    height: 103px;
+    margin: 0 0 1.5em 0;
+  }
+
+    #frontpage #introduction p.certified span {
+      position: absolute;
+      background: transparent url('../images/frontpage-certified.png') no-repeat top left;
+      width: 378px;
+      height: 103px;
+    }
+    
+  #frontpage #introduction p.provision {
+    display: relative;
+    width: 378px;
+    height: 86px;
+    margin: -2em 0 0 0;
+  }
+
+    #frontpage #introduction p.provision span {
+      position: absolute;
+      background: transparent url('../images/frontpage-provision.png') no-repeat top left;
+      width: 378px;
+      height: 86px;
+    }
+
+  #frontpage #introduction p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+  }
+/* @end */
+
+/* @group page */
+#page #content {
+  margin-top: 70px;
+}
+  
+  #page #sidebar-left {
+    width: 200px;
+    margin-right: 40px;
+    float: left;
+  }
+
+  #page #sidebar-right {
+    background: transparent url('../images/bg-block.png') left top no-repeat;
+    padding: 20px 3px 0 3px;
+    width: 241px;
+    margin-left: 30px;
+    height: 343px;
+    float: left;
+  }
+  
+    #page #sidebar-right .block {
+      margin: 0 0 20px 20px;
+    }
+  
+      #page #sidebar-right .block h2 {
+        font-size: 1.8em;
+        font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; 
+        color: #463e3e;
+        text-transform: uppercase;
+        margin: 0 0 1em 0;
+      }
+      
+      #page #sidebar-right .block .content {
+        font-size: 1.2em;
+        font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; 
+      }
+  
+  #page #body {
+    width: 473px;
+    float: left;
+  }
+  
+    #page #body h2 {
+      line-height: 57px;
+      font-size: 2.2em;
+      color: #c40202;
+    }
+    
+    #page #body .node p {
+      margin-top: 15px;
+      font-size: 1.2em;
+    }
+  
+/* @end */
+
+/* @group footer */
+#footer {
+  background: transparent url('../images/frontpage-footer.png') no-repeat top left;
+  width: 990px;
+  height: 102px;
+  padding: 27px 0 0 0;
+}
+
+  #footer #sharing {
+    width: 612px;
+    height: 129px;
+    font-family: Trebuchet, Georgia;
+    font-size: 1.2em;
+    color: #485252;  
+    float: left;
+  }
+  
+    #footer #sharing p,
+    #footer #sharing img {
+      float: left;
+      margin: 0 5px 0 0;
+    }
+    
+    #footer #sharing p.share {
+      margin: 0 30px 0 0;
+    }
+    
+    #footer #sharing p.social {
+    }
+  
+  #footer #notice {
+    float: left;
+    width: 378px;
+    height: 129px;
+    font-family: Trebuchet, Georgia;
+  }
+    
+    #footer #notice p.copyright {
+      float: right;
+      text-align: right;
+      width: 375px;
+      color: #858e8e;
+      font-size: 1.2em;
+    }
+
+    #footer #notice ul.secondary-links {
+      float: right;
+      margin: 0;
+      padding: 0;
+      width: 375px;
+      list-style: none;
+      font-size: 1.2em;
+    }
+     
+      #footer #notice ul.secondary-links li {
+        float: right;
+        margin: 0 15px 0 0;
+      }
+      
+     #footer #notice ul.secondary-links li.first {
+       margin: 0;
+     }
+    
+        #footer #notice ul.secondary-links li a {
+          color: #485252;
+          text-decoration: none;
+          border: none;
+        }
+    
+        #footer #notice ul.secondary-links li a:hover {
+          color: #c20404;
+         border-bottom: 1px solid #c20404;
+        }
+/* @end */
+
+/* @group primary navigation */
+#header div.navigation {
+  float: left;
+  height: 133px;
+  width: 538px;
+}
+
+  #header div.navigation ul {
+    float: right;
+    font-family: Trebuchet, Georgia;
+    list-style: none;
+    padding: 0;
+    margin: 52px 40px 0 0px;
+    text-transform: uppercase;
+  }
+  
+    #header div.navigation ul li {
+      padding: 0;
+      font-size: 1.5em;
+      margin: 0 15px;
+      height: 27px;
+      float: left;
+      padding: 10px 0 0 0;
+    }
+    
+    #header div.navigation ul li a {
+      border: none;
+    }
+        
+    #header div.navigation ul li.active {
+      font-size: 2.0em;
+      margin-top: -5px;
+    }
+    
+    #header div.navigation ul li.active a {
+      color: #c84f50;
+    }
+/* @end */
+
+/* @group clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+/* @end */

@@ -1,0 +1,11 @@
+/**
+ * Fixes IE6 bugs 
+ */
+ 
+ #frontpage #media .gallery {
+   text-align: center;
+ }
+ 
+ #frontpage #media .gallery .gallery-wrapper {
+   display: inline-block; /* todo: needs IE8 support!! */
+ }

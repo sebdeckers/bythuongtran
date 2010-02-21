@@ -1,0 +1,13 @@
+; $Id: $
+name = By Thuong Tran
+description = Theme for By Thuong Tran (bythuongtran.com)
+version = 0.1.0
+core = 6.x
+engine = phptemplate
+
+stylesheets[all][] = styles/style.css
+
+regions[sidebar_left] = Left sidebar
+regions[sidebar_right] = Right sidebar
+
+conditional-stylesheets[if lt IE 7][all][] = styles/style.ie6.css
