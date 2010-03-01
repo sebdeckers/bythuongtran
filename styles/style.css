@@ -34,7 +34,7 @@ a {
 
 /* @group general layout */
 #frontpage {
-  background: transparent url('../images/bg-frontpage.png') no-repeat center top;
+  background: transparent url('../images/bg-frontpage.jpg') no-repeat center top;
   height: 731;
   margin: 0 auto;
 }
@@ -59,14 +59,14 @@ a {
   #header h1 {
     display: relative;
     height: 133px;
-    width: 452px;
+    width: 330px;
     float: left;
   }
 
   #header h1 span {
     position: absolute;
     height: 133px;
-    width: 452px;
+    width: 330px;
   }
   
   #frontpage #header h1 span {
@@ -221,9 +221,21 @@ a {
       color: #c40202;
     }
     
+    /* Font sizes below */
+    #page #body .node ol,
+    #page #body .node ul,
     #page #body .node p {
       margin-top: 15px;
       font-size: 1.2em;
+    }
+
+    #page #body .node ol,
+    #page #body .node ul {
+      list-style-position: inside;
+    }
+    
+    #page #body .node table td {
+      border: 1px solid #454c55;
     }
   
 /* @end */
@@ -307,7 +319,7 @@ a {
 #header div.navigation {
   float: left;
   height: 133px;
-  width: 538px;
+  width: 660px;
 }
 
   #header div.navigation ul {
@@ -315,7 +327,7 @@ a {
     font-family: Trebuchet, Georgia;
     list-style: none;
     padding: 0;
-    margin: 52px 40px 0 0px;
+    margin: 52px 0 0 0;
     text-transform: uppercase;
   }
   
@@ -326,6 +338,10 @@ a {
       height: 27px;
       float: left;
       padding: 10px 0 0 0;
+    }
+    
+    #header div.navigation ul li.last {  
+      margin-right: 0px;
     }
     
     #header div.navigation ul li a {

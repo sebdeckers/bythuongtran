@@ -45,22 +45,18 @@
           <div id="introduction">
 		    <p class="certified"><span></span>The certified wedding specialist in Vietnam and Singapore</p>
 		
-		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus purus a justo semper 
-					sed dapibus lacus malesuada. Nulla ultricies varius magna sed volutpat. Morbi vestibulum
-					 malesuada odio, in rutrum neque molestie vitae.</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus purus a justo semper 
-					sed dapibus lacus suada</p>
-
-			<p>Curabitur luctus purus a justo semper sed dapibus lacus malesuada. Nulla ultricies varius magna 
-					sed volutpat. Morbi vestibulum malesuada odio, in rutrum neque molestie vitae.</p>
+			<?php print $content; ?>
 					
 			<p class="provision"><span></span>Providing premium wedding and destination wedding services inplanning and consulting</p>
 	      </div>
 	    </div>
 	    <div id="footer">
 		  <div id="sharing">
-			  <img src="/<?php print path_to_theme(); ?>/images/icon-addtoany.png" alt="Add to any" />
+			  <a class="a2a_dd" href="http://www.addtoany.com/share_save?linkname=Bythuongtran&amp;linkurl=bythuongtran.com">
+				<img src="/<?php print path_to_theme(); ?>/images/icon-addtoany.png" alt="Add to any" />
+			  </a>
+			  <script type="text/javascript">a2a_linkname="Bythuongtran";a2a_linkurl="bythuongtran.com";</script>
+			  <script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
 			  <p class="share">Share this website</p>
               <p class="social">Follow us at:</p>
 	          <img src="/<?php print path_to_theme(); ?>/images/icon-facebook.png" alt="Facebook" />
