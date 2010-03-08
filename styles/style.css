@@ -259,13 +259,19 @@ a {
     #page #body .node ol,
     #page #body .node ul,
     #page #body .node p {
-      margin-top: 15px;
-      font-size: 1.2em;
+      margin: 15px 0;
+      font-size: 12px;
     }
 
     #page #body .node ol,
     #page #body .node ul {
       list-style-position: inside;
+      margin-left: 15px;
+    }
+
+    #page #body .node ol li,
+    #page #body .node ul li {
+      margin: 10px 0;
     }
     
     #page #body .node table td {
