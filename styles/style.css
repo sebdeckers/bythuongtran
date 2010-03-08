@@ -54,7 +54,41 @@ a {
 /* @group frontpage */
 #header {
   height: 133px;
+  position: relative;
 }
+
+  #header div#language-switcher {
+    position: absolute;
+    top: 40px;
+    z-index: 3;
+  }
+  
+    #header div#language-switcher ul {
+      list-style: none;
+    }
+    
+      #header div#language-switcher ul li {
+        display: inline;
+      }
+      
+      #header div#language-switcher ul li a {
+        border: none;
+        font-size: 1.2em;
+        color: #888b90;
+      }
+
+      #header div#language-switcher ul li:before {
+        content: '  |  ';
+      }
+      
+      #header div#language-switcher ul li.first:before {
+        content: '';
+      }
+      
+      #header div#language-switcher ul li.active a {
+        font-weight: bold;
+        color: #454c55;
+      }
 
   #header h1 {
     display: relative;
