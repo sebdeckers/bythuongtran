@@ -55,9 +55,10 @@
 			  <script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
 			  <p class="share">Share this website</p>
               <p class="social">Follow us at:</p>
-	          <img src="/<?php print path_to_theme(); ?>/images/icon-facebook.png" alt="Facebook" />
-	          <img src="/<?php print path_to_theme(); ?>/images/icon-twitter.png" alt="Twitter" />
-	          <img src="/<?php print path_to_theme(); ?>/images/icon-blogger.png" alt="Blogger" />	
+	          <a href="http://www.facebook.com/bythuongtran"><img src="/<?php print path_to_theme(); ?>/images/icon-facebook.png" alt="Facebook" /></a>
+	          <a href="http://twitter.com/bythuongtran"><img src="/<?php print path_to_theme(); ?>/images/icon-twitter.png" alt="Twitter" /></a>
+	          <a href="http://blog.bythuongtran.com/"><img src="/<?php print path_to_theme(); ?>/images/icon-blogger.png" alt="Blogger" /></a>
+	          <a href="http://www.flickr.com/photos/bythuongtran"><img src="/<?php print path_to_theme(); ?>/images/icon-flickr.png" alt="Flickr" /></a>
 		  </div>
 		  <div id="notice">
             <?php if (isset($secondary_links)) : ?>
