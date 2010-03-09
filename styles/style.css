@@ -254,7 +254,6 @@ a {
   #footer #sharing {
     width: 612px;
     height: 129px;
-    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
     font-size: 1.2em;
     color: #485252;  
     float: left;
@@ -277,7 +276,6 @@ a {
     float: left;
     width: 378px;
     height: 129px;
-    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
   }
 
     #footer #notice p.copyright {
