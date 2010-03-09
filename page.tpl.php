@@ -11,6 +11,9 @@
 	<div id="page">
 	  <div id="container">
 	    <div id="header">
+		  <div id="language-switcher">
+		    <?php print $languageswitcher; ?>
+		  </div>
 		  <h1><span></span><?php print $site_name; ?></h1>
 				
 		  <div class="navigation">
