@@ -9,5 +9,6 @@ stylesheets[all][] = styles/style.css
 
 regions[sidebar_left] = Left sidebar
 regions[sidebar_right] = Right sidebar
+regions[languageswitcher] = Language switcher
 
 conditional-stylesheets[if lt IE 7][all][] = styles/style.ie6.css
