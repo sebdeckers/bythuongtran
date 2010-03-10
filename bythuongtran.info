@@ -7,6 +7,8 @@ engine = phptemplate
 
 stylesheets[all][] = styles/style.css
 
+regions[main_content_above] = Above main content
+regions[main_content_below] = Below main content
 regions[sidebar_left] = Left sidebar
 regions[sidebar_right] = Right sidebar
 regions[languageswitcher] = Language switcher

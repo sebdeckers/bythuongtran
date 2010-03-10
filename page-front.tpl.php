@@ -47,6 +47,7 @@ print $scripts;
 			</div>
 			<div id="introduction">
 				<?php
+				print $main_content_above;
 				if ($mission): print '<div id="mission">'. $mission .'</div>'; endif;
 				if ($tabs): print '<div id="tabs-wrapper" class="clear-block">'; endif;
 				//if ($title): print '<h2'. ($tabs ? ' class="with-tabs"' : '') .'>'. $title .'</h2>'; endif;
@@ -55,6 +56,7 @@ print $scripts;
 				if ($show_messages && $messages): print $messages; endif;
 				if ($help): print $help; endif;
 				print $content;
+				print $main_content_below;
 				?>
 			</div>
 		</div>
@@ -68,7 +70,7 @@ print $scripts;
 				<p class="share">Share this website</p>
 				<p class="social">Follow us at:</p>
 				<a href="http://www.facebook.com/bythuongtran"><img src="/<?php print path_to_theme(); ?>/images/icon-facebook.png" alt="Facebook" /></a>
-				<a href="http://twitter.com/bythuongtran"><img src="/<?php print path_to_theme(); ?>/images/icon-twitter.png" alt="Twitter" /></a>
+				<a href="http://twitter.com/by_thuongtran"><img src="/<?php print path_to_theme(); ?>/images/icon-twitter.png" alt="Twitter" /></a>
 				<a href="http://blog.bythuongtran.com/"><img src="/<?php print path_to_theme(); ?>/images/icon-blogger.png" alt="Blogger" /></a>
 				<a href="http://www.flickr.com/photos/bythuongtran"><img src="/<?php print path_to_theme(); ?>/images/icon-flickr.png" alt="Flickr" /></a>
 			</div>
