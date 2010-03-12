@@ -163,9 +163,6 @@ a {
 }
 
   #page #sidebar-left {
-    /*width: 200px;
-    margin-right: 40px;
-    float: left;*/
     float: right;
     margin: 0 0 0 30px;
     width: 241px;
@@ -185,16 +182,26 @@ a {
     }
 
       #page #sidebar-right .block h2 {
-        font-size: 1.8em;
-        font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
         color: #463e3e;
-        text-transform: uppercase;
+        font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+        font-size: 1.8em;
         margin: 0 0 1em 0;
+        text-transform: uppercase;
       }
 
       #page #sidebar-right .block .content {
-        font-size: 1.2em;
         font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        text-align: center;
+      }
+
+      #page #sidebar-right .block .content a {
+        border-width: 0;
+        text-decoration: none;
+      }
+
+      #page #sidebar-right .block .content iframe {
+        float: left;
       }
 
   #page #body {

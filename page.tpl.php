@@ -25,7 +25,6 @@ print $scripts;
 		<div id="content" class="clearfix">
 			<div id="sidebar-left">
 				<?php print $sidebar_left; ?>
-				&nbsp;
 			</div>
 			<div id="body">
 				<?php
