@@ -47,7 +47,7 @@ print $scripts;
 		<div id="footer">
 			<div id="sharing">
 				<a class="a2a_dd" href="http://www.addtoany.com/share_save?linkname=Bythuongtran&amp;linkurl=bythuongtran.com">
-					<img src="/<?php print path_to_theme(); ?>/images/icon-addtoany.png" alt="Add to any" />
+					<img src="/<?php print path_to_theme(); ?>/images/icon-addtoany.png" alt="<?php print t('Add to any'); ?>" />
 				</a>
 				<script type="text/javascript">a2a_linkname="Bythuongtran";a2a_linkurl="bythuongtran.com";</script>
 				<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>

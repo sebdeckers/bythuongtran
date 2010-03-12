@@ -236,6 +236,58 @@ a {
       width: 140px;
     }
 
+	/* Services table */
+	#body table.services {
+		background-color: #fff;
+		border: 4px ridge #C84F50;
+		padding: 10px 0;
+	}
+	#body table.services tr {
+	}
+	#body table.services td {
+		font-size: 1.2em;
+	}
+	#body table.services .services {
+		background-color: #fff;
+		font-size: 1.6em;
+		font-weight: bold;
+		padding-left: 118px;
+	}
+	#body table.services .package {
+		background-color: #fff;
+		font-weight: bold;
+		text-align: center;
+		width: 75px;
+	}
+	#body table.services .before,
+	#body table.services .during,
+	#body table.services .after {
+		background-color: #fff;
+		font-weight: bold;
+		padding: 0.25em 0.75em 0 0;
+		text-align: right;
+		vertical-align: top;
+		width: 110px;
+	}
+	#body table.services .description {
+		padding: 0.25em 0 0.25em 0.35em;
+	}
+	#body table.services tr:nth-child(odd) {
+		background-color: #ddd;
+	}
+	#body table.services tr:nth-child(even) {
+		background-color: #eee;
+	}
+	#body table.services .time {
+		padding-top: 1.75em;
+	}
+	#body table.services .yes {
+		background: url("../images/services-checked.png") no-repeat scroll center -5px transparent;
+		text-align: center;
+	}
+	#body table.services .no {
+	}
+
     /* Font sizes below */
     #page #body .node ol,
     #page #body .node ul,
@@ -253,10 +305,6 @@ a {
     #page #body .node ol li,
     #page #body .node ul li {
       margin: 10px 0;
-    }
-
-    #page #body .node table td {
-      border: 1px solid #454c55;
     }
 
 /* @end */

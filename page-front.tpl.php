@@ -39,12 +39,12 @@ print $scripts;
 				</div>
 				<div class="slideshow-controls">
 					<!-- List of thumbnail IMGs with Anchors to the big images. -->
-					<a href="#" class="slideshow-back" title="<?php t('Back'); ?>"><?php t('Back'); ?></a>
-					<ul class="slideshow-list"> </ul>
-					<a href="#" class="slideshow-forward" title="<?php t('Forward'); ?>"><?php t('Forward'); ?></a>
+					<a href="#" class="slideshow-back" title="<?php print t('Back'); ?>"><?php print t('Back'); ?></a>
+					<ul class="slideshow-list"></ul>
+					<a href="#" class="slideshow-forward" title="<?php print t('Forward'); ?>"><?php print t('Forward'); ?></a>
 					<!-- Buttons to open the corresponding full screen Flickr slideshow and main gallery. -->
-					<a class="slideshow-fullscreen" target="_blank" href="http://www.flickr.com/photos/bythuongtran/sets/72157623394214280/show/" title="<?php t('Full screen'); ?>"><?php t('Full screen'); ?></a>
-					<a class="slideshow-more" target="_blank" href="http://www.flickr.com/photos/bythuongtran" title="<?php t('More photos'); ?>"><?php t('More photos'); ?></a>
+					<a class="slideshow-fullscreen" target="_blank" href="http://www.flickr.com/photos/bythuongtran/sets/72157623394214280/show/" title="<?php print t('Full screen'); ?>"><?php print t('Full screen'); ?></a>
+					<a class="slideshow-more" target="_blank" href="http://www.flickr.com/photos/bythuongtran" title="<?php print t('More photos'); ?>"><?php print t('More photos'); ?></a>
 				</div>
 			</div>
 			<div id="introduction">
@@ -65,7 +65,7 @@ print $scripts;
 		<div id="footer">
 			<div id="sharing">
 				<a class="a2a_dd" href="http://www.addtoany.com/share_save?linkname=Bythuongtran&amp;linkurl=bythuongtran.com">
-					<img src="/<?php print path_to_theme(); ?>/images/icon-addtoany.png" alt="Add to any" />
+					<img src="/<?php print path_to_theme(); ?>/images/icon-addtoany.png" alt="<?php print t('Add to any'); ?>" />
 				</a>
 				<script type="text/javascript">a2a_linkname="Bythuongtran";a2a_linkurl="bythuongtran.com";</script>
 				<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
