@@ -1,9 +1,8 @@
 /* Container for the full scale image. */
 .slideshow-big {
-    background: url('../images/frontpage-picture.png') no-repeat scroll left top transparent;
-    height: 389px;
+    height: 373px;
 	overflow: hidden;
-	padding: 27px 0 0 29px;
+	padding: 33px 0 0 42px;
     width: 562px;
 }
 /* Scale images to fill the container, regardless of aspect ratio. */
@@ -14,6 +13,7 @@
 /* Hide thumbnails and navigation if javascript is disabled. */
 .slideshow-controls {
 	display: none;
+	margin: 0 0 0 13px;
 }
 /* Determines the number of thumbs per line. */
 .galleria {

@@ -1,8 +1,9 @@
 /**
  * By Thuong Tran Drupal theme
- * bythuongtran.com
+ * www.bythuongtran.com
  * Made by Colada <http://www.colada.be>
  * Matthias Vandermaesen <matthias@colada.be>
+ * Sebastiaan Deckers <cbas@pandion.im>
  */
 
 /*  @group reset */
@@ -21,7 +22,7 @@ body {
   background: transparent url('../images/bg-body.png');
   /*font-size: 87%; */ /* 14px */
   font-size: 62%;
-  color: #868c93;
+  color: #54585F;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
@@ -34,13 +35,13 @@ a {
 
 /* @group general layout */
 #frontpage {
-  background: transparent url('../images/bg-frontpage.jpg') no-repeat center top;
+  background: url("../images/bg-frontpage.jpg") no-repeat scroll center -20px transparent;
   height: 731;
   margin: 0 auto;
 }
 
 #page {
-  background: transparent url('../images/bg-page.jpg') no-repeat center top;
+  background: url("../images/bg-page.jpg") no-repeat scroll center -20px transparent;
   height: 731px;
   margin: 0 auto;
 }
@@ -53,13 +54,13 @@ a {
 
 /* @group frontpage */
 #header {
-  height: 133px;
+  height: 113px;
   position: relative;
 }
 
   #header div#language-switcher {
     position: absolute;
-    top: 40px;
+    top: 20px;
     z-index: 3;
   }
 
@@ -92,33 +93,21 @@ a {
 
   #header h1 {
     display: relative;
-    height: 133px;
-    width: 330px;
     float: left;
-  }
-
-  #header h1 span {
-    position: absolute;
-    height: 133px;
+    height: 113px;
+    visibility: hidden;
     width: 330px;
-  }
-
-  #frontpage #header h1 span {
-    background: url('../images/header.png') no-repeat top left;
-  }
-
-  #page #header h1 span {
-    background: url('../images/page-header.png') no-repeat top left;
   }
 
 #frontpage #media {
-  width: 612px;
   float: left;
+  width: 612px;
 }
 
 #frontpage #introduction {
-  width: 378px;
   float: left;
+  padding: 0 0 0 10px;
+  width: 368px;
 }
 
   #frontpage #introduction h1 {
@@ -127,7 +116,7 @@ a {
     font-weight: bold;
     line-height: 1.25em;
     margin: 0 0 0.75em 0;
-    text-shadow: 1px 1px 1px rgba(60, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(60, 0, 0, 0.20);
   }
 
   #frontpage #introduction h1 strong {
@@ -171,13 +160,15 @@ a {
 
 /* @group page */
 #page #content {
-  margin-top: 70px;
 }
 
   #page #sidebar-left {
-    width: 200px;
+    /*width: 200px;
     margin-right: 40px;
-    float: left;
+    float: left;*/
+    float: right;
+    margin: 0 0 0 30px;
+    width: 241px;
   }
 
   #page #sidebar-right {
@@ -207,14 +198,35 @@ a {
       }
 
   #page #body {
-    width: 473px;
     float: left;
+    margin: 8px 0 0 10px;
+    width: 693px;
   }
 
     #page #body h2 {
-      line-height: 57px;
-      font-size: 2.2em;
       color: #c40202;
+      font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+      font-size: 2em;
+      font-weight: bold;
+      line-height: 57px;
+      margin: 0 0 30px 0;
+      text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(190, 0, 0, 0.30);
+    }
+
+    #page #body img.landscape, #page #body img.portrait {
+      float: right;
+    }
+    #page #body img.landscape {
+      background: url("../images/img-bg-landscape.png") no-repeat scroll center top transparent;
+      height: 140px;
+      padding: 25px 37px 67px 61px;
+      width: 210px;
+    }
+    #page #body img.portrait {
+      background: url("../images/img-bg-portrait.png") no-repeat scroll center top transparent;
+      height: 210px;
+      padding: 37px 25px 67px 67px;
+      width: 140px;
     }
 
     /* Font sizes below */
@@ -244,18 +256,16 @@ a {
 
 /* @group footer */
 #footer {
-  background: transparent url('../images/frontpage-footer.png') no-repeat top left;
+  background: transparent url('../images/frontpage-footer.jpg') no-repeat top left;
   width: 990px;
-  height: 102px;
+  height: 72px;
   margin: 50px 0 0 0;
   padding: 27px 0 0 0;
 }
 
   #footer #sharing {
     width: 612px;
-    height: 129px;
     font-size: 1.2em;
-    color: #485252;  
     float: left;
   }
 
@@ -275,14 +285,12 @@ a {
   #footer #notice {
     float: left;
     width: 378px;
-    height: 129px;
   }
 
     #footer #notice p.copyright {
       float: right;
       text-align: right;
       width: 375px;
-      color: #858e8e;
       font-size: 1.2em;
     }
 
@@ -323,7 +331,7 @@ a {
 /* @group primary navigation */
 #header div.navigation {
   float: left;
-  height: 133px;
+  height: 113px;
   width: 660px;
 }
 
@@ -332,8 +340,8 @@ a {
     font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
     list-style: none;
     padding: 0;
-    margin: 52px 0 0 0;
-    text-shadow: 1px 1px 1px rgba(60, 0, 0, 0.2);
+    margin: 32px 0 0 0;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(60, 0, 0, 0.20);
   }
 
     #header div.navigation ul li {
