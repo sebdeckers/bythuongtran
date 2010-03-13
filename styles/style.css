@@ -19,7 +19,7 @@ a img {border:none;}
 
 /* @group typography */
 body {
-  background: transparent url('../images/bg-body.png');
+  background: transparent url('../images/bg-body.jpg');
   /*font-size: 87%; */ /* 14px */
   font-size: 62%;
   color: #54585F;
