@@ -40,35 +40,24 @@
 	text-decoration: none;
 }
 .slideshow-back, .slideshow-forward {
-	height: 40px;
-	width: 19px;
-}
-.slideshow-back:hover, .slideshow-forward:hover {
-	background-position: left -11px;
-}
-.slideshow-back:active, .slideshow-forward:active {
-	background-position: left -9px;
-}
-.slideshow-back {
-	background: url('../images/gallery-left.png') no-repeat scroll left -10px transparent;
-}
-.slideshow-forward {
-	background: url('../images/gallery-right.png') no-repeat scroll left -10px transparent;
+	height: 22px;
+	width: 20px;
+	margin: 9px 0 0 0;
 }
 .slideshow-fullscreen, .slideshow-more {
 	height: 32px;
 	width: 38px;
-	margin: 4px 0 0 5px;
+	margin: 6px 0 0 5px;
 }
-.slideshow-fullscreen:hover, .slideshow-more:hover {
-	background-position: left -1px;
-}
-.slideshow-fullscreen:active, .slideshow-more:active {
-	background-position: left 1px;
-}
-.slideshow-fullscreen {
-	background: url('../images/slideshow-fullscreen.png') no-repeat scroll left center transparent;
-}
-.slideshow-more {
-	background: url('../images/slideshow-more.png') no-repeat scroll left top transparent;
-}
+.slideshow-back { background: url('../images/sprites-slideshow.png') no-repeat scroll -4px -28px transparent; }
+.slideshow-back:hover { background-position: -4px -29px; }
+.slideshow-back:active { background-position: -4px -27px; }
+.slideshow-forward { background: url('../images/sprites-slideshow.png') no-repeat scroll -26px -28px transparent; }
+.slideshow-forward:hover { background-position: -26px -29px; }
+.slideshow-forward:active { background-position: -26px -27px; }
+.slideshow-fullscreen { background: url('../images/sprites-slideshow.png') no-repeat scroll -55px -46px transparent; }
+.slideshow-fullscreen:hover { background-position: -55px -47px; }
+.slideshow-fullscreen:active { background-position: -55px -45px; }
+.slideshow-more { background: url('../images/sprites-slideshow.png') no-repeat scroll -55px -6px transparent; }
+.slideshow-more:hover { background-position: -55px -7px; }
+.slideshow-more:active { background-position: -55px -5px; }
