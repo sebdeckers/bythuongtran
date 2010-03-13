@@ -251,7 +251,6 @@ a {
 	/* Services table */
 	#body table.services {
 		background-color: #fff;
-		border: 4px ridge #C84F50;
 		padding: 10px 0;
 	}
 	#body table.services tr {
