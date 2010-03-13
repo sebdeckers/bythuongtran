@@ -324,8 +324,8 @@ a {
     float: left;
   }
 
-    #footer #sharing p,
-    #footer #sharing img {
+    #footer #sharing a,
+    #footer #sharing p {
       float: left;
       margin: 0 5px 0 0;
     }
@@ -336,6 +336,37 @@ a {
 
     #footer #sharing p.social {
     }
+
+	#footer #sharing .addtoany,
+	#footer #sharing .blogger,
+	#footer #sharing .facebook,
+	#footer #sharing .flickr,
+	#footer #sharing .twitter {
+		border-width: 0;
+		height: 16px;
+		width: 16px;
+		/* Malarkey Image Replacement */
+		letter-spacing: normal;
+		text-indent: -9999px;
+		overflow: hidden;
+	}
+
+	#footer #sharing .addtoany {
+		background: url("../images/sprites-social.png") no-repeat scroll 0px top transparent;
+	}
+	#footer #sharing .blogger {
+		background: url("../images/sprites-social.png") no-repeat scroll -16px top transparent;
+		width: 17px;
+	}
+	#footer #sharing .facebook {
+		background: url("../images/sprites-social.png") no-repeat scroll -33px top transparent;
+	}
+	#footer #sharing .flickr {
+		background: url("../images/sprites-social.png") no-repeat scroll -49px top transparent;
+	}
+	#footer #sharing .twitter {
+		background: url("../images/sprites-social.png") no-repeat scroll -65px top transparent;
+	}
 
   #footer #notice {
     float: left;

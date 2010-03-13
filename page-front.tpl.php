@@ -64,17 +64,15 @@ print $scripts;
 		</div>
 		<div id="footer">
 			<div id="sharing">
-				<a class="a2a_dd" href="http://www.addtoany.com/share_save?linkname=Bythuongtran&amp;linkurl=bythuongtran.com">
-					<img src="/<?php print path_to_theme(); ?>/images/icon-addtoany.png" alt="<?php print t('Add to any'); ?>" />
-				</a>
+				<a class="a2a_dd" href="http://www.addtoany.com/share_save?linkname=Bythuongtran&amp;linkurl=bythuongtran.com" title="<?php print t('Add to any'); ?>"><?php print t('Add to any'); ?></a>
 				<script type="text/javascript">a2a_linkname="Bythuongtran";a2a_linkurl="bythuongtran.com";</script>
 				<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
 				<p class="share"><?php print t('Share this website'); ?></p>
 				<p class="social"><?php print t('Follow us at'); ?>:</p>
-				<a href="http://www.facebook.com/bythuongtran"><img src="/<?php print path_to_theme(); ?>/images/icon-facebook.png" alt="Facebook" /></a>
-				<a href="http://twitter.com/by_thuongtran"><img src="/<?php print path_to_theme(); ?>/images/icon-twitter.png" alt="Twitter" /></a>
-				<a href="http://blog.bythuongtran.com/"><img src="/<?php print path_to_theme(); ?>/images/icon-blogger.png" alt="Blogger" /></a>
-				<a href="http://www.flickr.com/photos/bythuongtran"><img src="/<?php print path_to_theme(); ?>/images/icon-flickr.png" alt="Flickr" /></a>
+				<a href="http://www.facebook.com/bythuongtran" class="facebook" title="Facebook">Facebook</a>
+				<a href="http://twitter.com/thuongtran" class="twitter" title="Twitter">Twitter</a>
+				<a href="http://blog.bythuongtran.com/" class="blogger" title="Blogger">Blogger</a>
+				<a href="http://www.flickr.com/photos/bythuongtran" class="flickr" title="Flickr">Flickr</a>
 			</div>
 			<div id="notice">
 				<?php if (isset($secondary_links)): print theme('links', $secondary_links, array('class' => 'secondary-links')); endif; ?>
