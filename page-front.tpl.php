@@ -64,7 +64,7 @@ print $scripts;
 		</div>
 		<div id="footer">
 			<div id="sharing">
-				<a class="a2a_dd" href="http://www.addtoany.com/share_save?linkname=Bythuongtran&amp;linkurl=bythuongtran.com" title="<?php print t('Add to any'); ?>"><?php print t('Add to any'); ?></a>
+				<a class="a2a_dd addtoany" href="http://www.addtoany.com/share_save?linkname=Bythuongtran&amp;linkurl=bythuongtran.com" title="<?php print t('Add to any'); ?>"><?php print t('Add to any'); ?></a>
 				<script type="text/javascript">a2a_linkname="Bythuongtran";a2a_linkurl="bythuongtran.com";</script>
 				<script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
 				<p class="share"><?php print t('Share this website'); ?></p>
