@@ -96,11 +96,21 @@ a {
       }
 
   #header h1 {
-    display: relative;
     float: left;
-    height: 113px;
-    visibility: hidden;
+    height: 73px;
+    margin: 40px 0 0 0;
     width: 330px;
+  }
+
+  #header h1 a {
+    border-width: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    /* Malarkey Image Replacement */
+    letter-spacing: normal;
+    text-indent: -9999px;
+    overflow: hidden;
   }
 
 #frontpage #media {

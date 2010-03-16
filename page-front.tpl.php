@@ -22,7 +22,7 @@ print $scripts;
 				<?php print $languageswitcher; ?>
 			</div>
 			<h1>
-				<?php print $site_name; ?>
+				<a href="<?php print $base_path; ?>"><?php print $site_name; ?></a>
 			</h1>
 			<div class="navigation">
 				<?php if (isset($primary_links)): print theme('links', $primary_links, array('class' => 'primary-links')); endif; ?>
