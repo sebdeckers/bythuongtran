@@ -234,6 +234,24 @@ a {
       text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9), 2px 2px 2px rgba(190, 0, 0, 0.30);
     }
 
+	/* Intra-page named links */
+	#page #body .navigation a {
+		border-width: 0;
+		color: #54585F;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	#page #body .navigation a:hover {
+		color: #72787F;
+		text-decoration: underline;
+	}
+	#page #body a[name] {
+		border-width: 0;
+		color: #54585F;
+		text-decoration: none;
+	}
+
+    /* Swirly image borders */
     #page #body img.landscape, #page #body img.portrait {
       float: right;
     }
@@ -271,6 +289,15 @@ a {
 	}
 	#body table.services td {
 		font-size: 1.2em;
+	}
+	#body table.services a {
+		border-width: 0;
+		color: #54585F;
+		text-decoration: none;
+	}
+	#body table.services a:hover {
+		color: #72787F;
+		text-decoration: underline;
 	}
 	#body table.services .services {
 		background-color: #fff;
