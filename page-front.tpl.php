@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
 <head>
 <?php print $head ?>
-<title><?php print $head_title ?></title>
+<title><?php print $site_name . " | " . $site_slogan ?></title>
 <?php
 drupal_add_css(path_to_theme() . '/styles/galleria.css', 'theme');
 drupal_add_css(path_to_theme() . '/styles/slideshow.css', 'theme');
