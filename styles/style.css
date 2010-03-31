@@ -169,6 +169,7 @@ a {
   #frontpage #introduction p {
     font-size: 1.2em;
     margin-bottom: 2em;
+    text-align: justify;
   }
 /* @end */
 
@@ -346,6 +347,7 @@ a {
     #page #body .node p {
       margin: 15px 0;
       font-size: 12px;
+      text-align: justify;
     }
 
     #page #body .node ol,
