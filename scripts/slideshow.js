@@ -15,7 +15,7 @@ jQuery(function ($) {
 				return;
 
 			/* Parse the Flickr image URL. */
-			var match = item.media.m.match(/^http:\/\/farm([a-z0-9]+)\.static.flickr.com\/([a-z0-9]+)\/(\d+)_([a-z0-9]+)(_[omstb])?\.(jpg|gif|png)$/i);
+			var match = item.media.m.match(/^http:\/\/farm([a-z0-9]+)\.static.flickr.com\/([a-z0-9]+)\/(\d+)_([a-z0-9]+)(_[omstbz])?\.(jpg|gif|png)$/i);
 			if (match) {
 				var farm = match[1],
 					server = match[2],

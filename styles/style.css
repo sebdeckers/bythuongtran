@@ -236,6 +236,17 @@ a {
     }
 
 	/* Intra-page named links */
+	#page #body .navigation.portfolio a {
+		border-width: 0;
+		color: #C84F50;
+		font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+		font-size: 190%;
+		font-weight: bold;
+		text-decoration: underline;
+		text-shadow: rgba(255, 255, 255, 0.898438) 1px 1px 1px, rgba(60, 0, 0, 0.199219) 2px 2px 2px;
+	}
+	#page #body .navigation.portfolio a:hover {
+	}
 	#page #body .navigation a {
 		border-width: 0;
 		color: #54585F;
