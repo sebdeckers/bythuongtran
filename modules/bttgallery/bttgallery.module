@@ -1,0 +1,40 @@
+<?php
+/**
+ * This file is part of the Bythuongtran Gallery module for Drupal
+ * Copyright (c) 2010 Sebastiaan Deckers
+ * License: GNU General Public License version 3 or later
+ *
+ * @file bttgallery.module
+ *
+ * Module for Drupal to show a Galleria based slideshow on the Bythuongtran website.
+ */
+
+/**
+ * Display the slideshow.
+ * @param string $op one of "list", "view", "save" and "configure"
+ * @param integer $delta code to identify the block
+ * @param array $edit only for "save" operation
+ */
+function bttgallery_block($op = 'list', $delta = 0, $edit = array()) {
+	switch ($op) {
+		case 'list':
+			return array(
+				0 => array(
+					'info' => t('Bythuongtran Gallery')
+				)
+			);
+		case 'configure':
+		case 'save':
+			// TODO currently no per-block settings
+			break;
+		case 'view':
+			drupal_add_css(drupal_get_path('module', 'bttgallery') . '/styles/photos.css', 'theme');
+			drupal_add_js(drupal_get_path('module', 'bttgallery') . '/scripts/galleria/galleria.js');
+			drupal_add_js(drupal_get_path('module', 'bttgallery') . '/scripts/galleria/themes/classic/galleria.classic.js');
+			drupal_add_js(drupal_get_path('module', 'bttgallery') . '/scripts/photos.js');
+			return array(
+				'subject' => t('Bythuongtran Gallery'),
+				'content' => ' '
+			);
+	}
+}

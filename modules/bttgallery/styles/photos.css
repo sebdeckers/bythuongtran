@@ -1,0 +1,11 @@
+.block-bttgallery {
+	clear: both;
+	width: 100%;
+	height: 600px;
+}
+#sidebar-right {
+	display: none;
+}
+#page #body {
+	width: 100%;
+}

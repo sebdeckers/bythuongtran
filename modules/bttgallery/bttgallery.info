@@ -1,0 +1,8 @@
+; This file is part of the Bythuongtran Gallery module for Drupal
+; Copyright (c) 2010 Sebastiaan Deckers
+; License: GNU General Public License version 3 or later
+ 
+name = Bythuongtran Gallery
+description = Module for Drupal to show a Galleria based slideshow on the Bythuongtran website.
+version = 1.0
+core = 6.x
