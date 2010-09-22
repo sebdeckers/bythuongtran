@@ -533,7 +533,8 @@ a {
       margin-top: 1px;
     }
 
-    #header div.navigation ul li.active a {
+    #header div.navigation ul li.active a,
+    #header div.navigation ul li.active-trail a {
       color: #c84f50;
     }
 
