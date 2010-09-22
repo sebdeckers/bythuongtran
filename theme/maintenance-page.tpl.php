@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>Wedding Planning - Wedding Specialist - bythuongtran</title>
+<title>Wedding Planner in Vietnam - Vietnamese Weddings - By Thuong Tran</title>
 <link href='http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light&subset=latin' rel='stylesheet' type='text/css' />
 <style>
 html {
