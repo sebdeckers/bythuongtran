@@ -31,6 +31,7 @@ print $scripts;
 				print $main_content_above;
 				if ($mission): print '<div id="mission">'. $mission .'</div>'; endif;
 				if ($tabs): print '<div id="tabs-wrapper" class="clear-block">'; endif;
+				if ($breadcrumb): print $breadcrumb; endif;
 				if ($title): print '<h2'. ($tabs ? ' class="with-tabs"' : '') .'>'. $title .'</h2>'; endif;
 				if ($tabs): print '<ul class="tabs primary">'. $tabs .'</ul></div>'; endif;
 				if ($tabs2): print '<ul class="tabs secondary">'. $tabs2 .'</ul>'; endif;

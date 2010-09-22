@@ -225,6 +225,18 @@ a {
     width: 693px;
   }
 
+    #page #body .breadcrumb {
+      line-height: 2em;
+      margin-bottom: -2.2em;
+      margin-top: 0.2em;
+    }
+    #page #body .breadcrumb a {
+      border-width: 0;
+    }
+    #page #body .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
     #page #body h2 {
       color: #c40202;
       font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
