@@ -44,7 +44,7 @@ print $scripts;
 					<a href="#" class="slideshow-forward" title="<?php print t('Forward'); ?>"><?php print t('Forward'); ?></a>
 					<!-- Buttons to open the corresponding full screen Flickr slideshow and main gallery. -->
 					<a class="slideshow-fullscreen" target="_blank" href="http://www.flickr.com/photos/bythuongtran/sets/72157623394214280/show/" title="<?php print t('Full screen'); ?>"><?php print t('Full screen'); ?></a>
-					<a class="slideshow-more" target="_blank" href="http://www.flickr.com/photos/bythuongtran" title="<?php print t('More photos'); ?>"><?php print t('More photos'); ?></a>
+					<a class="slideshow-more" href="/photos" title="<?php print t('More photos'); ?>"><?php print t('More photos'); ?></a>
 				</div>
 			</div>
 			<div id="introduction">
