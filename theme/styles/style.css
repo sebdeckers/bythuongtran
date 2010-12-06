@@ -99,7 +99,7 @@ a {
 	float: left;
 	height: 73px;
 	margin: 40px 0 0 0;
-	width: 330px;
+	width: 340px;
 	}
 
 	#header h1 a {
@@ -108,6 +108,7 @@ a {
 	height: 100%;
 	width: 100%;
 	/* Malarkey Image Replacement */
+	background: url("../images/logo.png") no-repeat 8px 10px;
 	letter-spacing: normal;
 	text-indent: -9999px;
 	overflow: hidden;
@@ -509,7 +510,7 @@ a {
 #header div.navigation {
 	float: left;
 	height: 113px;
-	width: 660px;
+	width: 650px;
 }
 
 	#header div.navigation ul {
