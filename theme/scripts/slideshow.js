@@ -15,7 +15,7 @@ jQuery(function ($) {
 				return;
 
 			/* Parse the Flickr image URL. */
-			var match = item.media.m.match(/^http:\/\/farm([a-z0-9]+)\.static.flickr.com\/([a-z0-9]+)\/(\d+)_([a-z0-9]+)(_[omstbz])?\.(jpg|gif|png)$/i);
+			var match = item.media.m.match(/^http:\/\/farm([a-z0-9]+)\.staticflickr\.com\/([a-z0-9]+)\/(\d+)_([a-z0-9]+)(_[omstbz])?\.(jpg|gif|png)$/i);
 			if (match) {
 				var farm = match[1],
 					server = match[2],
@@ -25,8 +25,8 @@ jQuery(function ($) {
 					fileType = match[6];
 
 				/* Generate an HTML structure for Galleria. */
-				var thumb = $("<img/>").attr("src", "http://farm" + farm + ".static.flickr.com/" + server + "/" + photo + "_" + secret + "_s." + fileType);
-				var anchor = $("<a/>").attr("href", "http://farm" + farm + ".static.flickr.com/" + server + "/" + photo + "_" + secret + "." + fileType);
+				var thumb = $("<img/>").attr("src", "http://farm" + farm + ".staticflickr.com/" + server + "/" + photo + "_" + secret + "_s." + fileType);
+				var anchor = $("<a/>").attr("href", "http://farm" + farm + ".staticflickr.com/" + server + "/" + photo + "_" + secret + "." + fileType);
 				var li = $("<li/>").append(anchor.append(thumb)).addClass(i === 0 ? "active" : "");
 				slideshowList.append(li);
 			}

@@ -11,7 +11,7 @@ jQuery(function ($) {
 		$.each(data.items, function (i, item) {
 
 			/* Parse the Flickr image URL. */
-			var match = item.media.m.match(/^http:\/\/farm([a-z0-9]+)\.static.flickr.com\/([a-z0-9]+)\/(\d+)_([a-z0-9]+)(_[omstbz])?\.(jpg|gif|png)$/i);
+			var match = item.media.m.match(/^http:\/\/farm([a-z0-9]+)\.staticflickr\.com\/([a-z0-9]+)\/(\d+)_([a-z0-9]+)(_[omstbz])?\.(jpg|gif|png)$/i);
 			if (match) {
 				var farm = match[1],
 					server = match[2],
@@ -22,8 +22,8 @@ jQuery(function ($) {
 
 				/* Generate data structure for Galleria. */
 				slideshowList.push({
-					image: "http://farm" + farm + ".static.flickr.com/" + server + "/" + photo + "_" + secret + "_b." + fileType,
-					thumb: "http://farm" + farm + ".static.flickr.com/" + server + "/" + photo + "_" + secret + "_s." + fileType
+					image: "http://farm" + farm + ".staticflickr.com/" + server + "/" + photo + "_" + secret + "_b." + fileType,
+					thumb: "http://farm" + farm + ".staticflickr.com/" + server + "/" + photo + "_" + secret + "_s." + fileType
 				});
 			}
 		});
